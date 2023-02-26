@@ -61,7 +61,7 @@ void SortedList<T>::DeleteItem(T item) {
                 length--;
                 return;
             }for(int j = i+1; j< length;j++)
-                info[j-i]=info[j];
+                info[j-1]=info[j];
             --length;
             return;
         }
